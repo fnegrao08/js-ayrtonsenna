@@ -1,0 +1,198 @@
+function setup() {
+    createCanvas(400, 400);
+  }
+  
+  function draw() {
+    background(220);
+  }function setup() {
+    createCanvas(400, 400);
+  }
+  
+  function draw() {
+    background("white");
+    fill("black");
+    textSize(64);
+    textAlign(CENTER, CENTER)
+    
+    let maximo = width;
+    let minimo = 0;
+    let palavra = "Caminhante";
+    let quantidade = map(mouseX, 0, width, 1, palavra.length);
+    let parcial = palavra.substring(0,quantidade);
+    text(parcial,200,200);
+    
+  //  if(mouseX < 50){
+  //    let palavra = "C";
+  //    text(palavra, 200, 200);
+  //  } else {
+  //    let palavra = "Caminhante";
+  //    text(palavra, 200, 200);
+  //  }
+  }function draw() {
+    background(220);
+    let palavra = "Caminhe aprendendo";
+    fill("_____");
+    textSize(__);
+    textAlign(______, CENTER);
+    text(palavra, 200, 200);
+  }
+  let campoNome;
+  
+  if (campoNome === undefined) {
+      console.log("O campo NOME está vazio!");
+  } 
+  function setup() {
+    createCanvas(400, 400);
+  }
+  
+  function inicializaCores(){
+    background("white");
+    fill("black");
+    textSize(64);
+    textAlign(CENTER,CENTER);
+  }
+  
+  function draw() {
+    inicializaCores();
+    
+    let maximo = width;
+    let minimo = 1;
+    //mouseX, 0, width ==> 0, palavra.length
+    let palavra = "Caminhante";
+    let quantidade = map(mouseX, 0, width, 1, palavra.length);
+    //console.log(quantidade);
+    let parcial = palavra.substring(0,quantidade);
+    text(parcial,200,200);
+  }
+  /*
+   Este é um comentário de bloco regular.
+   Pode ser usado para explicar o código.
+  */
+  let palavra;
+  
+  function setup() {
+    createCanvas(400, 400);
+    
+    
+    let palavras = ["Caminhante", "Caminho", "Caminha"];
+    
+    palavra = random(palavras);
+  }
+  
+  function inicializaCores() {
+    
+    background("white");
+    fill("black");
+    textSize(64);
+    textAlign(CENTER, CENTER);
+  }
+  
+  function draw() {
+    
+    inicializaCores();
+  
+    let maximo = width;
+    let minimo = 0;
+    // mouseX, 0, width ==> 0, palavra.length
+    
+    let quantidade = map(mouseX, 0, width, 1, palavra.length);
+    //console.log(quantidade);
+    let parcial = palavra.substring(0, quantidade);
+    text(parcial, 200, 200);
+    
+  }
+  let nacionalidade = “Brasil”;
+  
+  function dadosPessoais(){
+      let idade = 14;
+  }
+  let saldoBancario = 1000;  
+  
+  function realizarCompra(valor) {
+      saldoBancario -= valor;
+  }
+  
+  realizarCompra(200);
+  console.log(saldoBancario);  // Resultado: 800
+  let palavra;
+  
+  function setup() {
+    createCanvas(400, 400);
+  
+    palavra = palavraAleatoria();
+  }
+  
+  function palavraAleatoria() {
+    let palavras = ["Caminhante", "Caminho", "Caminha"];
+    return random(palavras);
+  }
+  
+  function inicializaCores() {
+    background("white");
+    fill("black");
+    textSize(64);
+    textAlign(CENTER, CENTER);
+  }
+  
+  function draw() {
+    inicializaCores();
+  
+    let maximo = width;
+    let minimo = 0;
+    // mouseX, 0, width ==> 0, palavra.length
+  
+    let quantidade = map(mouseX, 0, width, 1, palavra.length);
+    //console.log(quantidade);
+    let parcial = palavra.substring(0, quantidade);
+    text(parcial, 200, 200);
+  }
+  let palavra;
+  
+  function setup() {
+    createCanvas(400, 400);
+  
+    palavra = palavraAleatoria();
+  }
+  
+  function palavraAleatoria(){
+    let palavras = ["Caminhante", "Caminho", "Caminha"];
+    return random(palavras);
+  }
+  
+  function inicializaCores() {
+  
+    background("white");
+    fill("black");
+    textSize(64);
+    textAlign(CENTER, CENTER);
+  }
+  
+  function palavraParcial(minimo, maximo) {
+    let quantidade = map(mouseX, minimo, maximo, 1, palavra.length);
+    let parcial = palavra.substring(0, quantidade);
+    return parcial;
+  }
+  
+  function draw() {
+  
+    inicializaCores();
+  
+    let texto = palavraParcial(0, width);
+    text(texto, 200, 200);
+  }
+  function facaCompras(livroA, livroB) {
+  
+    let soma = livroA + livroB;
+    console.log("A soma dos preços dos livros é: R$ " + soma + ",00");
+  }
+  
+  facaCompras(50, 50);
+  facaCompras(72, 28); 
+  function filmesParaAssistir(diaDaSemana, genero) {
+  
+    // ...
+  
+    return sugestaoFilme;
+  }
+  
+  
